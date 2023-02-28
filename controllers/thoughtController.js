@@ -87,7 +87,7 @@ module.exports = {
         if (thought) {
           return res.json(thought);
         }
-        return res.status(404).json({ message: "No thought with this ID" });
+        return res.status(404).json({ message: "No reaction with this ID" });
       })
       .catch((err) => res.status(500).send(err));
   },
